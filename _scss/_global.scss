@@ -14,9 +14,10 @@
 =            FONTS            =
 =============================*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
 $primary-font: 'Quicksand', serif;
-$secondary-font: 'Quicksand', serif;
+$secondary-font: 'Poiret One', cursive;
 
 /*=====  End of FONTS  ======*/
 
@@ -33,7 +34,7 @@ body {
   // padding-top: 50px;
 
   p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -58,7 +59,7 @@ body {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     font-family: $primary-font;
-    font-weight: 700;
+    font-weight: 400;
 
     @media (min-height: 800px) {
       // padding-top: 1rem;

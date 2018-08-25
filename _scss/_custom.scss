@@ -5,7 +5,9 @@
 /*==============================
 =            COLORS            =
 ==============================*/
-$cg-primary: #26664d; //darkslategreen
+$cg-primary: darken(brown, 0%);
+// $cg-primary: darken(brown, 10%);
+// $cg-primary: #26664d; //darkslategreen
 $cg-secondary: #956d33; //sienna
 $cg-third: #302968; //midnightblue
 $cg-extra-1: #e7d7bc; //wheat
@@ -18,13 +20,15 @@ $pink: #e83e8c !default;
 $red: #dc3545 !default;
 $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
-$green: #28a745 !default;
+$green: #26664d !default; //dark slategreen
+// $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
 $primary: $cg-primary;
 $secondary: $cg-secondary;
 $success: $green !default;
+// $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
