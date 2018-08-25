@@ -1,0 +1,59 @@
+/*=============================
+=            GLOBALS            =
+=============================*/
+
+@import 'global';
+
+/*=====  End of GLOBALS  ======*/
+
+/*=======================================
+=            HEADER & FOOTER            =
+=======================================*/
+
+/*=====  End of HEADER & FOOTER  ======*/
+
+/** THE BODY ===========================  */
+ul,
+menu,
+dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px !important;
+}
+
+.movie-list {
+  .movie-item {
+    box-shadow: 4px 4px 8px gray;
+    margin-bottom: 1rem;
+    list-style: none;
+    // background-color: darken($color: $cg-secondary, $amount: 10%);
+    // color: white;
+  }
+  // .slide-appear {
+  //   opacity: 0;
+  // }
+  // .slide-appear.slide-appear-active {
+  //   opacity: 1;
+  //   transition: opacity 0.5s ease-in-out;
+  // }
+  // .slide-enter {
+  //   transform: translateX(-100%);
+  // }
+  // .slide-enter.slide-enter-active {
+  //   transform: translateX(0);
+  //   transition: transform 0.5s ease-out;
+  // }
+
+  // .slide.leave {
+  //   transform: translateX(0);
+  // }
+  // .slide-leave.slide-leave-active {
+  //   transform: translateX(100%);
+  //   opacity: 0;
+  //   transition: 0.5s ease-in;
+  // }
+}
