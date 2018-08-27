@@ -5,10 +5,10 @@ import Sidebar from '../layout/Sidebar';
 const Dashboard = () => {
   return (
     <div className="row">
-      <div className="col-md-10">
+      <div className="col-sm-12 col-md-10 clients-box">
         <Clients />
       </div>
-      <div className="col-md-2">
+      <div className="col-sm-12 col-md-2 btn-box">
         <Sidebar />
       </div>
     </div>

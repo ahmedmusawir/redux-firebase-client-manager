@@ -24,3 +24,40 @@ dir {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px !important;
 }
+
+.clients-box {
+  // border: 1rem solid hotpink;
+  .page-title {
+    text-shadow: 2px 2px 3px lighten($color: black, $amount: 20%);
+    font-size: 2.5rem;
+  }
+  .total {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: lighten($color: $cg-primary, $amount: 40%);
+    text-shadow: 2px 2px 5px lighten($color: $cg-primary, $amount: 10%);
+  }
+  .table {
+    // border: 2px solid $cg-secondary;
+    .thead {
+      background-color: darken($color: $cg-secondary, $amount: 5%);
+      box-shadow: 2px 2px 6px lighten($color: black, $amount: 20%);
+      border: 3px solid darken($color: $cg-secondary, $amount: 5%);
+      color: white;
+    }
+    tbody {
+      tr {
+        box-shadow: 2px 2px 6px lighten($color: gray, $amount: 20%);
+        // border: 1rem solid red;
+        td {
+          padding-top: 1.2rem;
+        }
+      }
+    }
+  }
+}
+.btn-box {
+  .btn {
+    box-shadow: 3px 3px 6px lighten($color: black, $amount: 20%);
+  }
+}
