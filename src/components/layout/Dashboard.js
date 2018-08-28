@@ -9,8 +9,6 @@ const Dashboard = () => {
         <Sidebar />
         <Clients />
       </div>
-      {/* <div className="col-sm-12 col-md-2 btn-box">
-      </div> */}
     </div>
   );
 };

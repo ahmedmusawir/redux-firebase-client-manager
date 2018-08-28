@@ -38,7 +38,7 @@ export class Clients extends Component {
             </div>
             <div className="col-md-6">
               {/* <h5 className="text-right text-secondary"> */}
-              <p className="total float-right badge badge-light">
+              <p className="total badge badge-light mx-auto">
                 Total Owed:{' '}
                 <span className="text-danger">
                   ${parseFloat(totalOwed).toFixed(2)}
@@ -47,8 +47,8 @@ export class Clients extends Component {
             </div>
           </div>
           {/* FOR LARGE SCREENS */}
-          <div className="ro">
-            <table className="table table-striped d-none d-sm-block">
+          <div className="d-none d-sm-block">
+            <table className="table table-striped">
               <thead className="thead">
                 <tr>
                   <th>Name</th>
@@ -79,15 +79,19 @@ export class Clients extends Component {
             </table>
           </div>
           {/* FOR MOBILE ONLY */}
-          {/* {clients.map(client => (
-            <div className="card d-block d-sm-none" key={client.id}>
+          {clients.map(client => (
+            <div className="card d-block d-sm-none mb-3" key={client.id}>
               <div className="card-header bg-secondary text-light">
                 {client.firstName} {client.lastName}
               </div>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">Email: {client.email}</li>
                 <li className="list-group-item">
-                  Balance: ${parseFloat(client.balance).toFixed(2)}
+                  <strong className="text-secondary">Email:</strong>{' '}
+                  {client.email}
+                </li>
+                <li className="list-group-item">
+                  <strong className="text-secondary">Balance:</strong> $
+                  {parseFloat(client.balance).toFixed(2)}{' '}
                 </li>
                 <li className="list-group-item">
                   {' '}
@@ -100,7 +104,7 @@ export class Clients extends Component {
                 </li>
               </ul>
             </div>
-          ))} */}
+          ))}
         </div>
       );
     } else {
