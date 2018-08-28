@@ -46,35 +46,61 @@ export class Clients extends Component {
               </p>
             </div>
           </div>
-          <table className="table table-striped">
-            <thead className="thead">
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Balance</th>
-                <th />
-              </tr>
-            </thead>
-            <tbody>
-              {clients.map(client => (
-                <tr key={client.id}>
-                  <td>
-                    {client.firstName} {client.lastName}
-                  </td>
-                  <td>{client.email}</td>
-                  <td>${parseFloat(client.balance).toFixed(2)}</td>
-                  <td>
-                    <Link
-                      to={`/client/${client.id}`}
-                      className="btn btn-secondary btn-sm"
-                    >
-                      <i className="fa fa-arrow-circle-right" /> Details
-                    </Link>
-                  </td>
+          {/* FOR LARGE SCREENS */}
+          <div className="ro">
+            <table className="table table-striped d-none d-sm-block">
+              <thead className="thead">
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Balance</th>
+                  <th />
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {clients.map(client => (
+                  <tr key={client.id}>
+                    <td>
+                      {client.firstName} {client.lastName}
+                    </td>
+                    <td>{client.email}</td>
+                    <td>${parseFloat(client.balance).toFixed(2)}</td>
+                    <td>
+                      <Link
+                        to={`/client/${client.id}`}
+                        className="btn btn-secondary btn-sm"
+                      >
+                        <i className="fa fa-arrow-circle-right" /> Details
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {/* FOR MOBILE ONLY */}
+          {/* {clients.map(client => (
+            <div className="card d-block d-sm-none" key={client.id}>
+              <div className="card-header bg-secondary text-light">
+                {client.firstName} {client.lastName}
+              </div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Email: {client.email}</li>
+                <li className="list-group-item">
+                  Balance: ${parseFloat(client.balance).toFixed(2)}
+                </li>
+                <li className="list-group-item">
+                  {' '}
+                  <Link
+                    to={`/client/${client.id}`}
+                    className="btn btn-secondary btn-sm"
+                  >
+                    <i className="fa fa-arrow-circle-right" /> Details
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          ))} */}
         </div>
       );
     } else {
