@@ -31,14 +31,14 @@ export class Login extends Component {
   render() {
     const { message, messageType } = this.props.notify;
     return (
-      <div className="row">
+      <div className="row animated bounce">
         <div className="col-md-6 mx-auto">
-          <div className="card">
+          <div className="card login-box">
             <div className="card-body">
               {message ? (
                 <Alert message={message} messageType={messageType} />
               ) : null}
-              <h1 className="text-center pb-4 pt-3 text-secondary">
+              <h1 className="text-center pb-4 pt-3 text-secondary login-title">
                 <i className="fa fa-lock" /> Login
               </h1>
               <form onSubmit={this.onSubmit} className="form">

@@ -47,7 +47,7 @@ export class Clients extends Component {
             </div>
           </div>
           {/* FOR LARGE SCREENS */}
-          <div className="d-none d-sm-block">
+          <div className="d-none d-sm-block animated fadeIn">
             <table className="table table-striped">
               <thead className="thead">
                 <tr>

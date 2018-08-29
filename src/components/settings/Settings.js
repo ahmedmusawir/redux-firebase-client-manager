@@ -29,7 +29,7 @@ export class Settings extends Component {
     } = this.props.settings;
 
     return (
-      <div>
+      <div className=" animated bounceIn">
         <div className="row">
           <div className="col-md-6">
             <Link to="/" className="btn btn-link text-secondary">

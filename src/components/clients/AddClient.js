@@ -37,7 +37,7 @@ export class AddClient extends Component {
   render() {
     const { disableBalanceOnAdd } = this.props.settings;
     return (
-      <div>
+      <div className=" animated bounceInLeft">
         <div className="row">
           <div className="col-md-6">
             <Link to="/" className="btn btn-link text-secondary">

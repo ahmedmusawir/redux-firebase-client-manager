@@ -70,7 +70,7 @@ export class ClientDetails extends Component {
 
     if (client) {
       return (
-        <div>
+        <div className=" animated bounceInLeft">
           <div className="row">
             <div className="col-md-6">
               <Link to="/" className="btn btn-link text-secondary">

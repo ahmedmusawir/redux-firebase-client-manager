@@ -45,7 +45,7 @@ export class EditClient extends Component {
 
     if (client) {
       return (
-        <div>
+        <div className=" animated bounceInLeft">
           <h1>
             {client.firstName} {client.lastName}
           </h1>

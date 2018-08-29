@@ -24,7 +24,12 @@ dir {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px !important;
 }
-
+.login-box {
+  box-shadow: 3px 3px 8px #e3e3e3;
+  .login-title {
+    text-shadow: 2px 2px 6px lighten($color: black, $amount: 50%);
+  }
+}
 .clients-box {
   // border: 1rem solid hotpink;
   .page-title {
