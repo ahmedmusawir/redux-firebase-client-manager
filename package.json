@@ -5,6 +5,8 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "firebase": "^5.4.1",
+    "firebase-tools": "^4.2.1",
+    "global": "^4.3.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
